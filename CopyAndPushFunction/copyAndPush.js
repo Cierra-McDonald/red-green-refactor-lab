@@ -1,9 +1,7 @@
 
-const copyAndPush = (arr) => { 
+const copyAndPush = (arr, fruit) => { 
 
-  const newArr = arr.slice(' ');
-
-  newArr.push('cherry');
+  const newArr = [...arr, fruit];
  
   return newArr;
 };
