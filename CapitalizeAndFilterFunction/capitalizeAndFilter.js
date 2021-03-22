@@ -2,17 +2,9 @@
 
 const upperCaseFilter = (arr) => {
  
-  const newArr = [];
+  const mapMe = arr.map(month => month.toUpperCase()).filter((f) => f.charAt(0) !== 'F');
 
-  for(let i = 0; i < arr.length; i++) { 
-    newArr.push(arr[i].toUpperCase());
-    
-    if(arr[i].charAt(0) === 'f' || arr[i].charAt(0) === 'F') { 
-      newArr.pop();
-    }
-  }
-
-  return newArr;
+  return mapMe;
 
 };
 
