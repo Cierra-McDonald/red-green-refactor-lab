@@ -6,9 +6,10 @@ describe('return a single quote from the Futurama Quote API', () => {
 
 
     expect(futuramaObj).toEqual({ 
-      name: 'Bender',
-      text: 'Bite my shiny metal ass.', 
-      image: 'https://res.cloudinary.com/dzxqhkyqd/image/fetch/c_scale,w_500/https://res.cloudinary.com/dzxqhkyqd/image/upload/v1552429540/bender.png' });
+      name: expect.any(String),
+      text: expect.any(String), 
+      image: expect.any(String)
+    });
 
   });
 
